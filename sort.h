@@ -18,7 +18,7 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-void swapper(int *first, int *second);
+void swap(int *first, int *second);
 void q_sort(int *array, size_t size, size_t low, size_t high);
 size_t q_partition(int *array, size_t size, size_t low, size_t high);
 void q_swap(int *a, int *b, int *array, size_t size);

@@ -27,6 +27,7 @@ void q_sort(int *array, size_t size, size_t low, size_t high)
 	if (low < high)
 	{
 		size_t par = q_partition(array, size, low, high);
+
 		if (par > low + 1)
 			q_sort(array, size, low, par - 1);
 		if (par < high - 1)
@@ -70,6 +71,7 @@ size_t q_partition(int *array, size_t size, size_t low, size_t high)
 void q_swap(int *a, int *b, int *array, size_t size)
 {
 	int temp = *a;
+
 	if (a != b)
 	{
 		*a = *b;

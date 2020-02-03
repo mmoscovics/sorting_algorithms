@@ -10,7 +10,7 @@
 void shell_sort(int *array, size_t size)
 {
 	size_t gap, idx, i;
-	int temp, change = 0;
+	int temp;
 
 	if (array == NULL || size < 2)
 		return;
@@ -22,14 +22,10 @@ void shell_sort(int *array, size_t size)
 		{
 			temp = array[idx];
 			for (i = idx; i >= gap && array[i - gap] >= temp; i -= gap)
-			{
 				array[i] = array[i - gap];
-				change = 1;
-			}
 			array[i] = temp;
 		}
 		gap = (gap - 1) / 3;
-		if (change != 0)
-			print_array(array, size);
+		print_array(array, size);
 	}
 }

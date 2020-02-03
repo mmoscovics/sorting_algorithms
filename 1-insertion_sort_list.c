@@ -15,7 +15,7 @@ void insertion_sort_list(listint_t **list)
     while (current->next != NULL)
     {
         loop = current;
-        while (loop != NULL && pos->n > swap->n)
+        while (loop != NULL)
         {
             pos = loop;
             swap = loop->next;

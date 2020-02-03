@@ -60,7 +60,7 @@ deck.h | Header file for project 12. Dealer
 ### Bitonic Sort
 
 # Authors
-Mitchell Moscovics - mitchell.moscovics@holbertonschool.com
-Kathleen McKiernan - kathleen.mckiernan@holbertonschool.com
+- Kathleen McKiernan - kathleen.mckiernan@holbertonschool.com
+- Mitchell Moscovics - mitchell.moscovics@holbertonschool.com
 
 ## Created for Holberton School NHV

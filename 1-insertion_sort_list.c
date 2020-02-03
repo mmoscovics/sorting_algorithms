@@ -27,10 +27,10 @@ void insertion_sort_list(listint_t **list)
                 pos->prev = swap;
                 pos->next = swap->next;
                 swap->next = pos;
-                print_list(list);
+                print_list(*list);
             }
             loop = loop->prev;
         }
-        current = current->next
+        current = current->next;
     }
 }

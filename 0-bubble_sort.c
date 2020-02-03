@@ -7,19 +7,18 @@
  */
 void swap(int *first, int *second)
 {
-        int temp;
+	int temp;
 
-        temp = *first;
-        *first = *second;
-        *second = temp;
+	temp = *first;
+	*first = *second;
+	*second = temp;
 }
-
 /**
-* bubble_sort - Function to sort array through bubble sort
-* @array: Array being sorted
-* @size: Size of array
-* Return: Organized array
-*/
+ * bubble_sort - Function to sort array through bubble sort
+ * @array: Array being sorted
+ * @size: Size of array
+ * Return: Organized array
+ */
 void bubble_sort(int *array, size_t size)
 {
 	size_t temp1;
@@ -27,9 +26,9 @@ void bubble_sort(int *array, size_t size)
 
 	if ((array) && (size > 2))
 	{
-		for(temp1 = 0; temp1 < (size - 1); temp1++)
+		for (temp1 = 0; temp1 < (size - 1); temp1++)
 		{
-			for(temp2 = 0; temp2 < (size - temp1 - 1); temp2++)
+			for (temp2 = 0; temp2 < (size - temp1 - 1); temp2++)
 			{
 				if (array[temp2] > array[temp2 + 1])
 				{

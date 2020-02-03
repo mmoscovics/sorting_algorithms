@@ -7,11 +7,11 @@
  */
 void swap(int *first, int *second)
 {
-        int temp;
+	int temp;
 
-        temp = *first;
-        *first = *second;
-        *second = temp;
+	temp = *first;
+	*first = *second;
+	*second = temp;
 }
 /**
  * selection_sort - Sort array of integers using Selection Sort algorithm

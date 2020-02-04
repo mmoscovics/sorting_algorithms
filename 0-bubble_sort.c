@@ -23,12 +23,7 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t temp1;
 	size_t temp2;
-	int check;
 
-	if (array == NULL || size == 0)
-	{
-		return;
-	}
 	if ((array) && (size > 2))
 	{
 		for (temp1 = 0; temp1 < (size - 1); temp1++)
@@ -39,12 +34,7 @@ void bubble_sort(int *array, size_t size)
 				{
 					swap(&array[temp2], &array[temp2 + 1]);
 					print_array(array, size);
-					check = 1;
 				}
-			}
-			if (check == 0)
-			{
-				break;
 			}
 		}
 	}

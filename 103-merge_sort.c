@@ -13,7 +13,10 @@ void merge_sort(int *array, size_t size)
 	if (copy == NULL)
 		return;
 	if (array == NULL || size < 2)
+	{
+		free(copy);
 		return;
+	}
 	split_merge(array, 0, size, copy);
 	free(copy);
 }

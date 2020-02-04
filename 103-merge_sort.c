@@ -8,7 +8,7 @@
 
 void merge_sort(int *array, size_t size)
 {
-	int *copy = malloc(sizeof(int) * size);
+	int *copy = malloc(sizeof(int) * size + 1);
 
 	if (copy == NULL)
 		return;
@@ -32,7 +32,7 @@ void split_merge(int *A, size_t left, size_t right, int *B)
 
 	if (right - left < 2)
 		return;
-	mid = ((right + 1) + left) / 2;
+	mid = (right + left) / 2;
 	split_merge(A, left, mid, B);
 	split_merge(A, mid, right, B);
 	merge(A, left, mid, right, B);
@@ -56,7 +56,7 @@ void merge(int *A, size_t left, size_t mid, size_t right, int *B)
 	printf("[right]: ");
 	print_array(&A[mid], right - mid);
 
-	for (i = left; i < right; i++)
+	for (i = left; i <= right; i++)
 	{
 		if (l < mid && (m >= right || A[l] <= A[m]))
 		{
@@ -75,9 +75,9 @@ void merge(int *A, size_t left, size_t mid, size_t right, int *B)
 }
 
 /**
- * copy_array: copies array to temporary array
+ * copy_array - copies array to temporary array
  * @A: array of integers
- * size: size of array
+ * @size: size of array
  * @B: temp array to copy to
  */
 

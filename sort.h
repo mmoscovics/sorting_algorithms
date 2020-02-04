@@ -22,6 +22,10 @@ void swap(int *first, int *second);
 void q_sort(int *array, size_t size, size_t low, size_t high);
 size_t q_partition(int *array, size_t size, size_t low, size_t high);
 void q_swap(int *a, int *b, int *array, size_t size);
+size_t hoare_partition(int *array, size_t size, size_t low, size_t high);
+void split_merge(int *a, size_t left, size_t right, int *b);
+void merge(int *a, size_t left, size_t mid, size_t right, int *b);
+void copy_array(int *a, size_t size, int *b);
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);

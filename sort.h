@@ -26,6 +26,8 @@ size_t hoare_partition(int *array, size_t size, size_t low, size_t high);
 void split_merge(int *a, size_t left, size_t right, int *b);
 void merge(int *a, size_t left, size_t mid, size_t right, int *b);
 void copy_array(int *a, size_t size, int *b);
+void nswap(listint_t **list, listint_t **first, listint_t **second, int *temp);
+void shakeitup(listint_t **listy, listint_t *here, listint_t *end, int parse);
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
